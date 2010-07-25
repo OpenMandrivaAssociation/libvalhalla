@@ -1,13 +1,12 @@
-%define major 1
+%define major 2
 %define libname %mklibname valhalla %{major}
 %define develname %mklibname valhalla -d
 
 Name: libvalhalla
-Version: 1.0.0
-Release: %mkrel 1
+Version: 2.0.0
+Release: %mkrel -c 20100714 1
 URL: http://libvalhalla.geexbox.org/
 Source:	http://libvalhalla.geexbox.org/releases/%{name}-%{version}.tar.bz2
-Patch0: libvalhalla-1.0.0-link.patch
 License: LGPLv2+
 Summary: A media scanner
 Group: System/Libraries
@@ -66,7 +65,6 @@ the libvalhalla library.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p0
 
 %build
 %setup_compile_flags
@@ -89,6 +87,7 @@ rm -rf %{buildroot}
 %files test
 %defattr(-,root,root)
 %{_bindir}/*
+%{_mandir}/man1/*
 
 %files -n %{libname}
 %defattr(-,root,root)
