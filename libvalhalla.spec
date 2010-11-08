@@ -4,7 +4,7 @@
 
 Name: libvalhalla
 Version: 2.0.0
-Release: %mkrel -c 20100714 1
+Release: %mkrel 1
 URL: http://libvalhalla.geexbox.org/
 Source:	http://libvalhalla.geexbox.org/releases/%{name}-%{version}.tar.bz2
 License: LGPLv2+
