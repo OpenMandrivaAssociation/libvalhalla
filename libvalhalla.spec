@@ -10,6 +10,11 @@ Source:	http://libvalhalla.geexbox.org/releases/%{name}-%{version}.tar.bz2
 License: LGPLv2+
 Summary: A media scanner
 Group: System/Libraries
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: sqlite3-devel
 BuildRequires: ffmpeg-devel
 BuildRequires: curl-devel
